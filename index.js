@@ -2,7 +2,7 @@ var express = require("express");
 var mdb = require('mongoose')
 var User = require('./models/userSchema')
 var app = express();
-mdb.connect("mongodb://localhost:27017/SKCET")
+mdb.connect("mongodb+srv://ksprasanthksp10:Ksp%401009@skcet.ow7ni.mongodb.net/SKCET")
 var db = mdb.connection
 db.once("open",()=>{
     console.log("MongoDB Connection Successful");
